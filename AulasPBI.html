@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Painel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAF0F9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            text-align: center;
+            
+            height: 67px; /*Altura do retangulo */
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .logo {
+            position: absolute;
+            top: 0px; /* Distância do topo */
+            left: 400px; /* Distância da esquerda */
+            height: auto;
+            width: 170px; /* tamanho da logo */    
+        }
+
+        .icon-user {
+            position: absolute;
+            top: 12px; /* Distância do topo */
+            left: 1500px; /* Distância da esquerda */
+            height: auto;
+            width: 45px; /* tamanho da logo */    
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 10px auto;
+            background-color: #fff;
+            padding: 13px; /*Espaçamento da caixa até os retangulos*/
+            border-radius: 5px; /* Arredondamento da caixa */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+            height: 850px; /*Altura da caixa */
+
+        }
+
+        h2{
+            color: #ffffff;
+        }
+
+        .session {
+            border: 1px solid #ccc; /* Borda dos retangulos */
+            padding: 10px; /* Espaço entre o inicio dos textos e retangulos */
+            margin-bottom: 10px; /* Espaçamento entre os retangulos */
+            color: #1b1b1b;
+        }
+
+        .session h2 {
+            color: #c834db;
+        }
+        
+
+        .checkbox{
+            float: right; /* Alinhar à direita */
+            margin-left: 1px; /* Espaçamento entre aula e checkbox */
+            transform: scale(2.0); /* Aumenta o tamanho da checkbox */
+            margin-top: 60px; /* Adiciona espaço superior para mover a checkbox para baixo */
+            margin-right: 15px; /* Adiciona espaço superior para mover a checkbox para direita */
+
+            /* Cor de preenchimento da checkbox */
+            background-color: #0074d9; /* Cor azul de exemplo */
+            border: 2px solid #0074d9; /* Cor da borda da checkbox */
+            
+            
+        }
+
+        .checkbox:checked {
+            background-color: #2ecc40; /* Cor verde de exemplo quando marcada */
+            border: 2px solid #2ecc40; /* Cor da borda quando marcada */
+        }
+
+        .link-assistir{
+            color: #1c56d3; /* Cor rosa para o link de "Assistir" */
+            text-decoration: none; /* Remove sublinhado do link */
+            font-weight: bold;
+
+        }
+
+                /* Efeito de cor ao passar o mouse */
+        .link-assistir:hover {
+            color: #0134c0; /* Cor rosa diferente ao passar o mouse */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
+
+        <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
+        
+    </header>
+    <div class="container">
+        <div id="aula1" class="session">
+            <input type="checkbox" class="checkbox" id="checkboxAula1">
+            <h2>Aula 1: Introdução ao Power BI e Importação de Dados </h2>
+            <p>Nesta aula introdutória, você será apresentado ao Power BI e ao projeto do painel simples que iremos criar. <br>
+                Aprenderemos a importar dados de um arquivo Excel local e a fazer as primeiras transformações, caso necessário.
+            </p>
+            <a href="pagina-assistir-aula1.html" class="link-assistir">⮞ Assistir Aula 1</a>
+        </div>
+        <div id="aula2" class="session">
+            <input type="checkbox" class="checkbox" id="checkboxAula2">
+            <h2>Aula 2: Modelagem de Dados no Power BI</h2>
+            <p>Na segunda aula, exploraremos a modelagem de dados no Power BI. 
+               Você aprenderá a criar tabelas, <br> definir relacionamentos entre elas e adicionar medidas simples aos seus dados utilizando a linguagem DAX.                
+            </p>
+            <a href="pagina-assistir-aula2.html" class="link-assistir">⮞ Assistir Aula 2</a>
+        </div>
+        <div id="aula3" class="session">
+            <input type="checkbox" class="checkbox" id="checkboxAula3">
+            <h2>Aula 3: Visualizações Básicas</h2>
+            <p>Nesta aula, focaremos nas visualizações disponíveis no Power BI. 
+               Demonstraremos como criar gráficos de barras, <br>gráficos de pizza, tabelas e cartões, além de personalizar essas visualizações para atender às suas necessidades.
+            </p>
+            <a href="pagina-assistir-aula3.html" class="link-assistir">⮞ Assistir Aula 3</a>
+        </div>
+        <div id="aula4" class="session">
+            <input type="checkbox" class="checkbox" id="checkboxAula4">
+            <h2>Aula 4: Design e Construção do Painel </h2>
+            <p>Finalmente, na quarta aula iremos realizar a construção do nosso painel. 
+               Montaremos o layout para nosso painel <br> e adicionaremos as visualizações, e claro, iremos abordar dicas para construção de um layout ideal. 
+            </p>
+            <a href="pagina-assistir-aula4.html" class="link-assistir">⮞ Assistir Aula 4</a>
+        </div>
+        <div id="aula5" class="session">
+            <input type="checkbox" class="checkbox" id="checkboxAula5">
+            <h2>Aula 5: Compartilhamento e Publicação</h2>
+            <p>Na última aula, abordaremos o compartilhamento e a publicação do seu painel. 
+               Explicaremos como salvar e <br> exportar o painel, além de mostrar opções de compartilhamento e publicar no Power BI Service.
+            </p>
+            <a href="pagina-assistir-aula5.html" class="link-assistir">⮞ Assistir Aula 5</a>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<!--------------------------------------------------------------------------------COM MENU SUSPENSO!! --------------------------------------------------------------------->
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Painel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .lesson {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .lesson-content {
+            display: none;
+        }
+
+        .lesson.active .lesson-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de Painel</h1>
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="#aula2" onclick="toggleLesson('aula2')">Aula 2</a></li>
+            <li><a href="#aula3" onclick="toggleLesson('aula3')">Aula 3</a></li>
+            <li><a href="#aula4" onclick="toggleLesson('aula4')">Aula 4</a></li>
+            <li><a href="#aula5" onclick="toggleLesson('aula5')">Aula 5</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="aula1" class="lesson">
+            <li><a href="#aula1" onclick="toggleLesson('aula1')">Aula 1 - Introdução ao Painel</a></li>
+            <div class="lesson-content">
+                <p>Nesta aula, você aprenderá os conceitos básicos sobre a criação de um painel.</p>
+            </div>
+        </div>
+        <div id="aula2" class="lesson">
+            <h2>Aula 2: Design e Layout</h2>
+            <div class="lesson-content">
+                <p>Aprenda a projetar o layout do seu painel de forma eficaz.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript para alternar a exibição do conteúdo da aula
+        function toggleLesson(lessonId) {
+            const lesson = document.getElementById(lessonId);
+            lesson.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <html>
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Incorporação do Power BI</title>
+    <h1> Exemplo Painel </h1>
+</head> -->
+    <!-- Código de incorporação do Power BI -->
+<!--     <iframe title="Painel4 (P)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmM4NjIxYzctOTkyYi00MGExLTk1YzgtMGJjZGI1YjhlOGI2IiwidCI6IjFkOTE3ODdkLWNjOGQtNDAwZS1hMzhiLTUzZDA5ODBlMzY1MyJ9" frameborder="0" allowFullScreen="true"></iframe>
+</html> -->
