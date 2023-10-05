@@ -27,6 +27,13 @@
             width: 320px; /* tamanho da logo */    
         }
 
+    .esqueci_minha_senha {
+            text-decoration: none; /* Remover sublinhado padrão */
+            color: #8150F5; /* Cor do link */
+            text-align: center;
+            cursor: not-allowed;
+     }
+
   </style>    
 </head>
     <body>
@@ -34,8 +41,8 @@
         <img src="https://i.ibb.co/f2Zxw2c/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo">
     
         <!--<h1 style="text-align: center;">Login</h1>-->
-        <form  method="post" action="../view/loginV.php">
-
+        <!--<form  method="post" action="../loginV.php">-->
+        <form  method="post" action="index.html">
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">@</span>
             <input type="text" class="form-control" placeholder="email" aria-label="email" name="email" aria-describedby="basic-addon1">
@@ -45,8 +52,12 @@
             <input type="text" class="form-control" placeholder="password" aria-label="password" name="password" aria-describedby="basic-addon1">
         </div>
 
+        
+        
         <div style="text-align: center;">
-            
+            <p>
+                <a href="#" class="esqueci_minha_senha">Esqueci minha senha</a>
+            </p>
             <button type="submit" class="btn btn-outline-success">Entrar</button>
         </div>
             
