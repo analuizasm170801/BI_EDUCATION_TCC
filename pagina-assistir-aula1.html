@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Curso de Painel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAF0F9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            text-align: center;
+            
+            height: 67px; /*Altura do retangulo */
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .logo {
+            position: absolute;
+            top: 0px; /* Distância do topo */
+            left: 400px; /* Distância da esquerda */
+            height: auto;
+            width: 170px; /* tamanho da logo */    
+        }
+
+        .icon-user {
+            position: absolute;
+            top: 12px; /* Distância do topo */
+            left: 1500px; /* Distância da esquerda */
+            height: auto;
+            width: 45px; /* tamanho da logo */    
+        }
+
+        .container {
+            max-width: 70%; /*Largura da caixa */
+            margin: 10px auto;
+            background-color: #fff;
+            padding: 13px; /*Espaçamento da caixa até os retangulos*/
+            border-radius: 5px; /* Arredondamento da caixa */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+            height: 10%; /*Altura da caixa */
+
+        }
+
+        h2{
+            color: #ffffff;
+        }            
+        .voltar-esquerda {
+            position: absolute;
+            top: 450px; /* Distância do topo */
+            left: 300px; /* Distância da esquerda */
+            height: auto;
+            width: 50px; /* tamanho da logo */    
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção de aspecto para vídeos de 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Estilo para o vídeo incorporado */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <a href="pagina-inicial.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
+
+        <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
+        
+    </header>
+    <div class="container">
+            <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dtTg143Dalw" frameborder="0" allowfullscreen></iframe>
+    </div>  
+    </div>
+
+    <a href="AulasPBI.html"><img src="https://i.ibb.co/FBpSjmG/voltar-icon.png" alt="voltar-icon" class="voltar-esquerda" ></a>
+</body>
+</html>
+
