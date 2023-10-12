@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Curso de Business Intelligence</title>
     <style>
         /* Estilos CSS (outros estilos) */
@@ -10,215 +12,368 @@
         /* Estilos para o header com sombra */
         body {
             font-family: Arial, sans-serif;
-            
-            background-image: linear-gradient(to bottom, #cccaf2 47%, #e7f0ff 47%);
+            background-color: #e7f0ff;
+            height: 100%;
+            /*background-image: linear-gradient(to bottom, #cccaf2 47%, #e7f0ff 47%);
             
             /*background: linear-gradient(to bottom, #ff6f61, #ff355d);*/
             margin: 0;
-            padding: 00;
+            padding: 0;
+            display: flex;
+            flex-direction: column
+
         }
 
         header {
             background-color: #ffffff;
             color: #fff;
             text-align: center;
-            height: 67px; /*Altura do retangulo */
+            height: 67px;
+            /*Altura do retangulo */
             position: relative;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        
+
         .logo {
             position: absolute;
-            top: 0px; /* Distância do topo */
-            left: 400px; /* Distância da esquerda */
+            top: 0px;
+            /* Distância do topo */
+            left: 20%;
+            /* Distância da esquerda */
             height: auto;
-            width: 170px; /* tamanho da logo */    
+            width: 100%;
+            /* tamanho da logo */
+            max-width: 170px;
+            /* Largura máxima da logo */
+        }
+
+        .container {
+            width: 100%;
+            /* Largura total da tela */
+            display: flex;
+            flex-direction: column;
+            background-color: #e7f0ff;
+            /* Empilhar verticalmente */
+        }
+
+        .content {
+            flex: 1;
+            /* Cresce para preencher o espaço restante */
+ 
+            padding: 0px;
+            /* Espaçamento interno */
         }
 
         .icon-user {
             position: absolute;
-            top: 12px; /* Distância do topo */
-            left: 1500px; /* Distância da esquerda */
+            top: 18%;
+            /* Distância do topo */
+            left: 75%;
+            /* Distância da esquerda */
             height: auto;
-            width: 45px; /* tamanho da logo */    
+            width: 45px;
+            /* tamanho da logo */
         }
 
         /* Estilos para o título no header */
         header h1 {
-            text-align: center; /* Centralizar o texto */
+            text-align: center;
+            /* Centralizar o texto */
         }
 
         /* Estilo para o texto e descrição */
         .intro {
             text-align: center;
-            margin-left: 70px; /* Margem esquerda de 20px */
-            margin-top: 70px; /* Margem superior de 20px */
+            margin-left: 3.5%;
+            /* Margem esquerda */
+            margin-top: 0.1%;
+
+            margin-bottom: 2.5%;
+            /* Margem superior*/
             text-align: left;
         }
 
         .intro h2 {
-            
             color: #333;
-            
+
         }
 
+
+
         .intro p {
+
+            height: auto;
             font-size: 20px;
             color: #383838;
             flex: 1;
-            padding-right: 700px; /* Tamanho da frase */
-             /* Justificar a direita*/
-            line-height: 1.6; /* Espaçamento das linhas */
+            padding-right: 35%;
+            /* Tamanho da frase */
+            /* Justificar a direita*/
+            line-height: 1.6;
+            /* Espaçamento das linhas */
+            max-width: 100%;
+
+        }
+
+        .container_intro {
+            /* Expandir para ocupar o espaço disponível */
+            background-color: #cccaf2;
+            /* Cor de fundo dos cursos */
+            position: relative;
+            display: grid;
+            grid-template-rows: 50px 50px;
+
+
         }
 
         .image-bi {
             position: absolute;
-            top: 91px; /* Distância do topo */
-            left: 1276px; /* Distância da esquerda */
+            top: 4.5%;
+            /* Distância do topo */
+            right: 4%;
+            /* Distância da esquerda */
             height: auto;
-            width: 510px; /* tamanho da logo */    
+            width: 27%;
+            /* tamanho da logo */
+            max-width: 100%;
+
+
+
+
+
+        }
+        .nossos-cursos-titulo{
+           
+            text-align: left;
+            margin-left: 3.5%;
+            
+            color: #8150f5
         }
 
         /* Estilo para o tópico "NOSSO CURSOS" */
         .nossos-cursos {
-            margin-top: 102px; /* Espaço superior de 30px */
-            margin-left: 70px; /* Margem esquerda de 20px */
+            margin-top: 0px;
+            /* Espaço superior de 30px */
+            /* Margem esquerda de 20px */
             text-align: left;
             color: #8150f5;
-            
+            background-color: #e7f0ff;
 
-            
         }
 
         /* Estilo para os cartazes dos cursos */
         .course-containers {
-            display: flex; /* Colocar os contêineres lado a lado */
-            
+            display: flex;
+            /* Colocar os contêineres lado a lado */
+            margin-left: 3.5%;
 
-            
+
+
         }
 
-        .image-container {
-            text-align: center; /* Centralizar a imagem */
-        }
+
 
         .course-image {
-            max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+            max-width: 100%;
+            /* Garantir que a imagem não ultrapasse o contêiner */
             height: auto;
-            
+
         }
 
         .course-container1 {
-            flex: 2; /* Expandir para ocupar o espaço disponível */
-            background-color: #ffffff; /* Cor de fundo dos cursos */
+            flex: 2;
+            /* Expandir para ocupar o espaço disponível */
+            background-color: #ffffff;
+            /* Cor de fundo dos cursos */
             padding: 20px;
             border-radius: 5px;
-            text-align: center; /* Centralizar o conteúdo */
+            text-align: center;
+            /* Centralizar o conteúdo */
             margin-right: 15px;
             margin-bottom: 20px;
             border: 1px solid #a9a6d8;
         }
 
         .course-container2 {
-            flex: 2; /* Expandir para ocupar o espaço disponível */
-            background-color: #ffffff; /* Cor de fundo dos cursos */
+            flex: 2;
+            /* Expandir para ocupar o espaço disponível */
+            background-color: #ffffff;
+            /* Cor de fundo dos cursos */
             padding: 20px;
             border-radius: 5px;
-            text-align: center; /* Centralizar o conteúdo */
+            text-align: center;
+            /* Centralizar o conteúdo */
             margin-right: 15px;
             margin-bottom: 20px;
             border: 1px solid #a9a6d8;
         }
 
         .course-container3 {
-            flex: 2; /* Expandir para ocupar o espaço disponível */
-            background-color: #ffffff; /* Cor de fundo dos cursos */
+            flex: 2;
+            /* Expandir para ocupar o espaço disponível */
+            background-color: #ffffff;
+            /* Cor de fundo dos cursos */
             padding: 20px;
             border-radius: 5px;
-            text-align: center; /* Centralizar o conteúdo */
+            text-align: center;
+            /* Centralizar o conteúdo */
             margin-right: 15px;
             margin-bottom: 20px;
             border: 1px solid #a9a6d8;
         }
 
         .course-container4 {
-            flex: 2; /* Expandir para ocupar o espaço disponível */
-            background-color: #ffffff; /* Cor de fundo dos cursos */
+            flex: 2;
+            /* Expandir para ocupar o espaço disponível */
+            background-color: #ffffff;
+            /* Cor de fundo dos cursos */
             padding: 20px;
             border-radius: 5px;
-            text-align: center; /* Centralizar o conteúdo */
+            text-align: center;
+            /* Centralizar o conteúdo */
             margin-right: 70px;
             margin-bottom: 20px;
             border: 1px solid #a9a6d8;
         }
 
+
+        @media (max-width: 1300px) {
+            .image-bi  {
+            position: absolute;
+            top: 7%;
+            /* Distância do topo */
+            right: 4%;
+            /* Distância da esquerda */
+            height: auto;
+            width: 32%;
+            /* tamanho da logo */
+            max-width: 50%;
+
+            }
+
+            .intro p {
+
+                height: auto;
+                font-size: 15px;
+                color: #383838;
+                flex: 1;
+                padding-right: 35%;
+                /* Tamanho da frase */
+                /* Justificar a direita*/
+                line-height: 1.6;
+                /* Espaçamento das linhas */
+                max-width: 100%;
+            }
+
+
+            .intro {
+            text-align: center;
+            margin-left: 3.5%;
+            /* Margem esquerda */
+            margin-top: 0.1%;
+            font-size: 15px;
+            margin-bottom: 2.5%;
+            /* Margem superior*/
+            text-align: left;
+        }
+        }
+
+
         /* Estilos CSS restantes */
     </style>
 </head>
+
 <body>
     <header>
 
-        <a href="index.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
+        <a href="index.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo"></a>
 
-        <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
-        
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
+
     </header>
     <div class="container">
         <!-- Conteúdo das aulas -->
-    </div>
-   
-    
-    <!-- Texto, descrição e imagem -->
-    <div class="intro">
-        <h1>Desvende o Futuro com Business Intelligence</h1>
-        <p>Explore o universo do Business Intelligence e prepare-se para liderar a revolução dos dados. <br>
-           Nossos cursos especializados capacitam você a extrair conhecimentos valiosos a partir de conjuntos de dados complexos. 
-           O BI não é apenas uma ferramenta, é uma vantagem competitiva. <br> <br>
-           Junte-se a nós e impulsione sua carreira, oferecendo insights perspicazes que moldarão o futuro dos negócios. <br>
-           A jornada começa aqui!</p>
-    </div>
 
 
-    <img src="https://i.ibb.co/1LLy1wW/imagem-index.png" alt="image-pc-dados" class="image-bi">
 
-
-    <!-- Tópico "NOSSO CURSOS" e cartazes dos cursos -->
-    <div class="nossos-cursos">
-        <h2>NOSSO CURSOS</h2>
-        <div class="course-containers">
-            <div class="course-container1">
-                <h3>Power BI para iniciantes</h3>
-                <div class="image-container">
-                    <a href="ObjetivosPBI.html"><img src="https://i.ibb.co/Jjt9pc0/img-PBI.jpg" alt="Power BI" class="course-image"></a>
-            
-                </div>
+        <!-- Texto, descrição e imagem -->
+        <div class="container_intro">
+            <div class="content"></div>
+            <div class="intro h2">
+                <h1>Desvende o Futuro com Business Intelligence</h1>
             </div>
-            <div class="course-container2">
-                <h3>Excel</h3>
-                <div class="image-container">
-                    <img src="https://i.ibb.co/CnJJTWh/img-EXCEL.jpg"alt="Power BI" class="course-image">
+            <div class="intro p">
 
-                </div>
+                <p>Explore o universo do Business Intelligence e prepare-se para liderar a revolução dos dados. <br>
+                    Nossos cursos especializados capacitam você a extrair conhecimentos valiosos a partir de conjuntos
+                    de dados.
+                    O BI não é apenas uma ferramenta, é uma vantagem competitiva. <br> <br>
+                    Junte-se a nós e impulsione sua carreira, oferecendo insights perspicazes que moldarão o futuro dos
+                    negócios. <br>
+                    A jornada começa aqui!</p>
+
             </div>
+            <img src="https://i.ibb.co/1LLy1wW/imagem-index.png" alt="image-pc-dados" class="image-bi">
+        </div>
 
-            <div class="course-container3">
-                <h3>Power Automate</h3>
-                <div class="image-container">
-                    <img src="https://i.ibb.co/fNYr5Bq/img-AUTOMATE.jpg" alt="Power Automate" class="course-image">
-                </div>
-            </div>
 
-            <div class="course-container4">
-                <h3>Power Apps</h3>
-                <div class="image-container">
-                    <img src="https://i.ibb.co/k1YzWnQ/img-APSS.jpg" alt="Power Apps" class="course-image">
 
-                </div>
 
-                <!-- Conteúdo do curso Excel -->
-            </div>
 
        
+
+        <div class="content">
+
+            <div id="nossos-cursos-titulo" class="nossos-cursos-titulo">
+            
+                <h2>NOSSOS CURSOS</h2>
+    
+            </div>
+            <!-- Tópico "NOSSO CURSOS" e cartazes dos cursos -->
+            <div class="nossos-cursos">
+
+                
+                
+                <div class="course-containers">
+                    <div class="course-container1">
+                        <h3>Power BI para iniciantes</h3>
+                        
+                            <a href="ObjetivosPBI.html"><img src="https://i.ibb.co/Jjt9pc0/img-PBI.jpg" alt="Power BI"
+                                    class="course-image"></a>
+
+                        
+                    </div>
+                    <div class="course-container2">
+                        <h3>Excel</h3>
+                        
+                            <img src="https://i.ibb.co/CnJJTWh/img-EXCEL.jpg" alt="Power BI" class="course-image">
+
+                        
+                    </div>
+
+                    <div class="course-container3">
+                        <h3>Power Automate</h3>
+                        
+                            <img src="https://i.ibb.co/fNYr5Bq/img-AUTOMATE.jpg" alt="Power Automate"
+                                class="course-image">
+                        
+                    </div>
+
+                    <div class="course-container4">
+                        <h3>Power Apps</h3>
+                        
+                            <img src="https://i.ibb.co/k1YzWnQ/img-APSS.jpg" alt="Power Apps" class="course-image">
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
