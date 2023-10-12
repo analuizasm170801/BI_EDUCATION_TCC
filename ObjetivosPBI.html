@@ -10,10 +10,10 @@
             background-color: #EAF0F9;
             background-image: url('https://i.ibb.co/6mDkgTh/img-PBI-BG.jpg');
 
-
             background-position: center; /* Centraliza a imagem vertical e horizontalmente */
             margin: 0;
             padding: 0;
+
         }
 
         header {
@@ -29,27 +29,32 @@
         .logo {
             position: absolute;
             top: 0px; /* Distância do topo */
-            left: 400px; /* Distância da esquerda */
+            left: 20%; /* Distância da esquerda */
             height: auto;
-            width: 170px; /* tamanho da logo */    
-        }
+            width: 100%; /* tamanho da logo */  
+            max-width: 170px; /* Largura máxima da logo */
+        }  
+        
 
         .icon-user {
             position: absolute;
-            top: 12px; /* Distância do topo */
-            left: 1500px; /* Distância da esquerda */
+            top: 18%; /* Distância do topo */
+            left: 75%; /* Distância da esquerda */
             height: auto;
             width: 45px; /* tamanho da logo */    
         }
 
         .container {
-            max-width: 1200px;
+            
             margin: 10px auto;
             background-color: #fff;
             padding: 13px; /*Espaçamento da caixa até os retangulos*/
             border-radius: 5px; /* Arredondamento da caixa */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
             height: 2000px; /*Altura da caixa */
+            max-width: 70%; /*Largura da caixa */
+
+            
 
         }
 
@@ -63,8 +68,8 @@
 
         .resultado {
             font-size: 16px; /* Tamanho da fonte do título */
-            margin-top: 20px; /* Espaço superior para o título */
-            margin-left: 475px;
+            /* Espaço superior para o título */
+            text-align: center;
             color: #818181;
         }
 
@@ -82,8 +87,8 @@
         }
         
         .botao-oval {
-            position: absolute;
-            display: inline-block;
+            
+            
             padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
             border-radius: 50px; /* Define a forma oval do botão */
             background-color: #007BFF; /* Cor de fundo do botão */
@@ -92,8 +97,8 @@
             font-size: 18px; /* Tamanho da fonte */
             cursor: pointer;
             transition: background-color 0.3s ease; /* Efeito de transição suave */
-            top: 1910px; 
-            margin-left: 830px;
+            margin-left: 42%;
+            
     
         }
 
@@ -104,21 +109,61 @@
 
         .iframe_painel {
             
-            margin-left: 50px;
+            max-width: 90%; /*Largura da caixa */
+            margin-left: 5%;   
+            height: 40%;
+        }
+
+        @media (max-width: 1300px) {
+        .iframe_painel {
+            max-width: 90%;
+            max-height: 90%; /*Largura da caixa */
+            margin-left: 5%;
+            height: 30%;   
+        }
+
+        .container {
+            
+            margin: 10px auto;
+            background-color: #fff;
+            padding: 13px; /*Espaçamento da caixa até os retangulos*/
+            border-radius: 5px; /* Arredondamento da caixa */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+            height: 1800px; /*Altura da caixa */
+            max-width: 70%; /*Largura da caixa */
+
+        }
+
+        .link-download{
+            color: #1c56d3; /* Cor rosa para o link de "Assistir" */
+
+        }
+
+                /* Efeito de cor ao passar o mouse */
+        .botao-oval {
+            
+            
+            padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
+            border-radius: 50px; /* Define a forma oval do botão */
+            background-color: #007BFF; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto */
+            text-decoration: none; /* Remove sublinhado padrão */
+            font-size: 18px; /* Tamanho da fonte */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Efeito de transição suave */
+            margin-left: 40%;
+            
     
         }
-
-        .retangulo-branco {
+    }
+      /*  .retangulo-branco {
             position: absolute;
-            top: 1920px; /* Distância do topo */
-            left: 350px; /* Distância da esquerda */
+            top: 1920px;  Distância do topo 
+            left: 350px;  Distância da esquerda 
             height: 85px;
-            width: 1150px; /* tamanho da logo */    
-        }
+            width: 1150px;  tamanho da logo    
+        } */   
 
-        .bt-comecar-curso {
-            top: 1920px; /* Distância do topo */
-        }
     </style>
 
 </head>
@@ -179,8 +224,10 @@
             <h2>Material </h2>
             <p> - 5 aulas; <br><br>
                 - Total de 1h40 min ; <BR> <br>
-                - Download.   
+                <a href="https://drive.google.com/drive/folders/1jH-lvNF9rQXuwHCzTjp5KOuUEYGSsBsX?usp=sharing" class="link-download">⮞ Download</a>   
             </p>
+
+            
             
         </div>
 
@@ -191,15 +238,15 @@
         </div>
         
         
-        <iframe class = "iframe_painel"title="Report Section" width="1100" height="773.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjE4ZjhiYTktMjZlNy00NzZlLTk2NjMtYTg5YzMxODYxY2RmIiwidCI6IjFkOTE3ODdkLWNjOGQtNDAwZS1hMzhiLTUzZDA5ODBlMzY1MyJ9" frameborder="0" allowFullScreen="true"></iframe>
-
+        <iframe class = "iframe_painel"title="Report Section" width="100%"  src="https://app.powerbi.com/view?r=eyJrIjoiNjE4ZjhiYTktMjZlNy00NzZlLTk2NjMtYTg5YzMxODYxY2RmIiwidCI6IjFkOTE3ODdkLWNjOGQtNDAwZS1hMzhiLTUzZDA5ODBlMzY1MyJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <br>
+        <br>
+        <a href="AulasPBI.html" class="botao-oval">Começar o Curso</a>
 
         
     </div>
     
-    <img src="https://i.ibb.co/D9XTsnc/Rectangle-5485.png" alt="Rectangle-5485" class="retangulo-branco">
+   <!--<img src="https://i.ibb.co/D9XTsnc/Rectangle-5485.png" alt="Rectangle-5485" class="retangulo-branco">-->   
 
-    <a href="AulasPBI.html" class="botao-oval">Começar o Curso</a>
 </body>
 </html>
-
