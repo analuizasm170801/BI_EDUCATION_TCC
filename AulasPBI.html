@@ -26,27 +26,29 @@
         .logo {
             position: absolute;
             top: 0px; /* Distância do topo */
-            left: 400px; /* Distância da esquerda */
+            left: 20%; /* Distância da esquerda */
             height: auto;
-            width: 170px; /* tamanho da logo */    
-        }
+            width: 100%; /* tamanho da logo */  
+            max-width: 170px; /* Largura máxima da logo */
+        }  
+        
 
         .icon-user {
             position: absolute;
-            top: 12px; /* Distância do topo */
-            left: 1500px; /* Distância da esquerda */
+            top: 18%; /* Distância do topo */
+            left: 75%; /* Distância da esquerda */
             height: auto;
             width: 45px; /* tamanho da logo */    
         }
 
         .container {
-            max-width: 900px;
+            max-width: 50%; 
             margin: 10px auto;
             background-color: #fff;
             padding: 13px; /*Espaçamento da caixa até os retangulos*/
             border-radius: 5px; /* Arredondamento da caixa */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
-            height: 850px; /*Altura da caixa */
+            height: 852px; /*Altura da caixa */
 
         }
 
@@ -98,13 +100,50 @@
         }
 
                 
-        .voltar-esquerda {
+        .voltar-icon{
             position: absolute;
-            top: 450px; /* Distância do topo */
-            left: 300px; /* Distância da esquerda */
+            top: 50%; /* Distância do topo */
+            left: 15%; /* Distância da esquerda */
             height: auto;
-            width: 50px; /* tamanho da logo */    
+            width: 3.5%; /* tamanho da logo */    
         }
+        @media (max-width: 1300px) {
+        h2{
+            color: #ffffff;
+            font-size: 20px;
+
+        }
+        .container {
+            max-width: 70%; 
+            margin: 10px auto;
+            background-color: #fff;
+            padding: 13px; /*Espaçamento da caixa até os retangulos*/
+            border-radius: 5px; /* Arredondamento da caixa */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+            height: 30%; /*Altura da caixa */
+
+        }
+
+        .voltar-icon{
+            position: absolute;
+            top: 50%; /* Distância do topo */
+            left: 7%; /* Distância da esquerda */
+            height: auto;
+            width: 3.5%; /* tamanho da logo */    
+        }
+
+        .session {
+            border: 1px solid #ccc; /* Borda dos retangulos */
+            padding: 10px; /* Espaço entre o inicio dos textos e retangulos */
+            margin-bottom: 10px; /* Espaçamento entre os retangulos */
+            color: #1b1b1b;
+            font-size: 15px;
+        }
+
+        }
+
+    
+
 
 
     </style>
@@ -112,7 +151,7 @@
 <body>
     <header>
 
-        <a href="pagina-inicial.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
+        <a href="index.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
 
         <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
         
@@ -161,7 +200,8 @@
         
     </div>
 
-    <a href="ObjetivosPBI.html"><img src="https://i.ibb.co/FBpSjmG/voltar-icon.png" alt="voltar-icon" class="voltar-esquerda" ></a>
+    <a href="ObjetivosPBI.html"><img src="https://i.ibb.co/FBpSjmG/voltar-icon.png" alt="voltar-icon" class="voltar-icon" ></a>
+
 </body>
 </html>
 
