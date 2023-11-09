@@ -41,6 +41,16 @@
             height: auto;
             width: 45px; /* tamanho da logo */    
         }
+        .icon-logoff {
+            position: absolute;
+            top: 18%;
+            /* Distância do topo */
+            left: 78%;
+            /* Distância da esquerda */
+            height: auto;
+            width: 45px;
+            /* tamanho da logo */
+        }
 
         .container {
             max-width: 70%; /*Largura da caixa */
@@ -88,7 +98,19 @@
             width: 100%; /* preencher o container todo*/
             height: 100%; /* preencher o container todo*/
         }
+        .link-roteiro{
+            color: #1c56d3; /* Cor para o link de "Assistir" */
+            text-decoration: none; /* Remove sublinhado do link */
+            font-weight: bold;
+            font-size: 20px;
 
+
+        }
+
+                /* Efeito de cor ao passar o mouse */
+        .link-roteiro:hover {
+            color: #0134c0; /* Cor diferente ao passar o mouse */
+        }
 
     </style>
 </head>
@@ -97,11 +119,14 @@
 
         <a href="pagina-inicial.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
 
-        <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
+        <a href="info_usuario.html"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
         
+        <a href="index.html"><img src="https://i.ibb.co/syKqfxS/logoff.png" alt="Logoff" class="icon-logoff" title="Sair"></a>
+
     </header>
     <div class="container">
-        <h2>Aula 2</h2>
+        <a href="AulasPBI.html" class="link-roteiro">↩ Voltar ao roteiro das aulas</a>
+        <h1></h1>
             <div class="video-container">
         <iframe src="https://www.youtube.com/embed/dtTg143Dalw" frameborder="0" allowfullscreen></iframe>
     </div>  

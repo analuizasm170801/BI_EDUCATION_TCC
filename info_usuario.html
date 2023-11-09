@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Painel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAF0F9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            text-align: center;
+            
+            height: 67px; /*Altura do retangulo */
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .logo {
+            position: absolute;
+            top: 0px; /* Distância do topo */
+            left: 20%; /* Distância da esquerda */
+            height: auto;
+            width: 100%; /* tamanho da logo */  
+            max-width: 170px; /* Largura máxima da logo */
+        }  
+        
+
+        .icon-user {
+            position: absolute;
+            top: 18%; /* Distância do topo */
+            left: 75%; /* Distância da esquerda */
+            height: auto;
+            width: 45px; /* tamanho da logo */    
+        }
+
+        .icon-logoff {
+            position: absolute;
+            top: 18%;
+            /* Distância do topo */
+            left: 78%;
+            /* Distância da esquerda */
+            height: auto;
+            width: 45px;
+            /* tamanho da logo */
+        }
+
+        .container {
+            max-width: 30%; 
+            margin: 10px auto;
+            background-color: #fff;
+            padding: 13px; /*Espaçamento da caixa até os retangulos*/
+            border-radius: 5px; /* Arredondamento da caixa */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+            height: 530px; /*Altura da caixa */
+
+        }
+
+        h2{
+            color: #ffffff;
+        }
+
+        .session {
+            border: 1px solid #ccc; /* Borda dos retangulos */
+            padding: 10px; /* Espaço entre o inicio dos textos e retangulos */
+            margin-bottom: 10px; /* Espaçamento entre os retangulos */
+            color: #1b1b1b;
+        }
+
+        .session h2 {
+            color: #007bff;
+        }
+        
+
+        .checkbox{
+            float: right; /* Alinhar à direita */
+            margin-left: 1px; /* Espaçamento entre aula e checkbox */
+            transform: scale(2.0); /* Aumenta o tamanho da checkbox */
+            margin-top: 60px; /* Adiciona espaço superior para mover a checkbox para baixo */
+            margin-right: 15px; /* Adiciona espaço superior para mover a checkbox para direita */
+
+            /* Cor de preenchimento da checkbox */
+            background-color: #0074d9; /* Cor azul de exemplo */
+            border: 2px solid #0074d9; /* Cor da borda da checkbox */
+            
+            
+        }
+
+        .checkbox:checked {
+            background-color: #2ecc40; /* Cor verde de exemplo quando marcada */
+            border: 2px solid #2ecc40; /* Cor da borda quando marcada */
+        }
+
+        .link-assistir{
+            color: #1c56d3; /* Cor rosa para o link de "Assistir" */
+            text-decoration: none; /* Remove sublinhado do link */
+            font-weight: bold;
+
+        }
+
+                /* Efeito de cor ao passar o mouse */
+        .link-assistir:hover {
+            color: #0134c0; /* Cor rosa diferente ao passar o mouse */
+        }
+
+                
+        .voltar-icon{
+            position: absolute;
+            top: 50%; /* Distância do topo */
+            left: 15%; /* Distância da esquerda */
+            height: auto;
+            width: 3.5%; /* tamanho da logo */    
+        }
+        .profile-image {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1300px) {
+            h2{
+                color: #ffffff;
+                font-size: 20px;
+
+            }
+            .container {
+                max-width: 70%; 
+                margin: 10px auto;
+                background-color: #fff;
+                padding: 13px; /*Espaçamento da caixa até os retangulos*/
+                border-radius: 5px; /* Arredondamento da caixa */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /*Edição da sombra */
+                height: 30%; /*Altura da caixa */
+
+            }
+
+            .voltar-icon{
+                position: absolute;
+                top: 50%; /* Distância do topo */
+                left: 7%; /* Distância da esquerda */
+                height: auto;
+                width: 3.5%; /* tamanho da logo */    
+            }
+
+            .session {
+                border: 1px solid #ccc; /* Borda dos retangulos */
+                padding: 10px; /* Espaço entre o inicio dos textos e retangulos */
+                margin-bottom: 10px; /* Espaçamento entre os retangulos */
+                color: #1b1b1b;
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html"><img src="https://i.ibb.co/HBr14FY/LOGO-SEM-BG.png" alt="LOGO_SEM_BG" class="logo" ></a>
+
+        <a href="https://imgbb.com/"><img  src="https://i.ibb.co/0XcXd8s/User.png" alt="User" class="icon-user"></a>
+        
+        <a href="index.html"><img src="https://i.ibb.co/syKqfxS/logoff.png" alt="Logoff" class="icon-logoff" title="Sair"></a>
+
+    </header>
+    <div class="container">
+        <img class="profile-image" src="https://i.ibb.co/dBt82H4/picture-png.png" alt="User Profile">
+        <form class="form">
+            <label for="firstname" class="form-label">Nome:</label>
+            <input type="text" id="firstname" name="firstname" class="form-input" value="Elisa">
+
+            <label for="lastname" class="form-label">Sobrenome:</label>
+            <input type="text" id="lastname" name="lastname" class="form-input" value="Maria da Silva">
+
+            <label for="phone" class="form-label">Telefone:</label>
+            <input type="tel" id="phone" name="phone" class="form-input" value="(12) 3356-7890">
+
+            <button type="submit" class="button" style="display: block; margin: 0 auto;">Salvar</button>
+        </form>
+        
+    </div>
+
+    
+
+</body>
+</html>
+
